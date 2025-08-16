@@ -3,8 +3,6 @@
 **Author:** Farid Arjmandmanesh  
 **Date:** 2025-08-16
 
-[![Build Status](https://gitlab.com/<your-username>/<your-repo>/badges/main/pipeline.svg)](https://gitlab.com/<your-username>/<your-repo>/pipelines)
-
 ---
 
 ## Table of Contents
