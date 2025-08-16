@@ -74,9 +74,8 @@ Update .env variables if necessary.
 docker-compose up --build
 ```
 
-• FastAPI available at http://localhost:8000
-
-• Redis available at localhost:6379
+- FastAPI available at http://localhost:8000
+- Redis available at localhost:6379
 
 4. **Stop services**
 
@@ -100,13 +99,13 @@ docker-compose logs -f
 
 ## Usage
 
-• Write a key-value pair:
+- Write a key-value pair:
 
 ```bash
 curl -X POST "http://localhost:8000/write/mykey" -d "value=hello"
 ```
 
-• Read a key:
+- Read a key:
 
 ```bash
 curl "http://localhost:8000/"
@@ -116,13 +115,13 @@ curl "http://localhost:8000/"
 
 ## CI/CD Pipeline
 
-•	.gitlab-ci.yml stages:
+- .gitlab-ci.yml stages:
     1.	Build: Builds Docker image for the app
     2.	Test: Runs unit tests using Redis service
     3.	Deploy: Pushes Docker image to GitLab Container Registry
-•	Redis service available during tests to ensure integration works.
-•	Linting and static code checks can be added to the pipeline.
-•	Pipeline badge at the top shows build status.
+- Redis service available during tests to ensure integration works.
+- Linting and static code checks can be added to the pipeline.
+- Pipeline badge at the top shows build status.
 
 Example pipeline snippet:
 
@@ -133,19 +132,19 @@ stages:
   - deploy
 ```
 
-•	Can be expanded to deploy automatically to staging or production servers.
+- Can be expanded to deploy automatically to staging or production servers.
 
 ---
 
 ## Logging
 
-•	Uses Python logging module.
-•	Logs captured:
-•	Application startup and shutdown
-•	Redis key operations
-•	Errors and warnings
-•	Logs can be forwarded to centralized logging systems like ELK or Grafana Loki.
-•	Structured logging improves observability and debugging.
+- Uses Python logging module.
+- Logs captured:
+- Application startup and shutdown
+- Redis key operations
+- Errors and warnings
+- Logs can be forwarded to centralized logging systems like ELK or Grafana Loki.
+- Structured logging improves observability and debugging.
 
 ---
 
