@@ -116,9 +116,9 @@ curl "http://localhost:8000/"
 ## CI/CD Pipeline
 
 - .gitlab-ci.yml stages:
-    1.	Build: Builds Docker image for the app
-    2.	Test: Runs unit tests using Redis service
-    3.	Deploy: Pushes Docker image to GitLab Container Registry
+    1. Build: Builds Docker image for the app
+    2. Test: Runs unit tests using Redis service
+    3. Deploy: Pushes Docker image to GitLab Container Registry
 - Redis service available during tests to ensure integration works.
 - Linting and static code checks can be added to the pipeline.
 - Pipeline badge at the top shows build status.
